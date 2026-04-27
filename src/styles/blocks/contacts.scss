@@ -1,0 +1,180 @@
+.contacts {
+  @include page-grid;
+
+  &__title {
+    grid-column: span 2;
+
+    @include on-tablet {
+      grid-column: span 6;
+    }
+
+    @include on-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__block {
+    margin-top: 48px;
+
+    &--fifth-avenue {
+      grid-column: span 2;
+
+      @include on-tablet {
+        grid-column: 1 / 4;
+      }
+
+      @include on-desktop {
+        grid-column: 1 / 4;
+      }
+    }
+
+    &--cloisters {
+      grid-column: span 2;
+
+      @include on-tablet {
+        grid-column: 1 / 4;
+      }
+
+      @include on-desktop {
+        grid-column: 4 / 7;
+      }
+    }
+  }
+
+  &__address-title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__phone {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__number {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #3e3e3e;
+  }
+
+  &__address {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__location {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #3e3e3e;
+  }
+
+  &__content {
+    grid-column: span 2;
+    margin-top: 48px;
+
+    @include on-tablet {
+      grid-column: 4 / -1;
+    }
+
+    @include on-desktop {
+      grid-column: 8 / -1;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    width: 100%;
+    height: 48px;
+    display: flex;
+    padding-inline: 10px;
+    box-sizing: border-box;
+
+    background-color: #f8f8fa;
+    color: #161616;
+    font: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    &--textarea {
+      resize: none;
+
+      height: 144px;
+      padding-block: 14px;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
+    }
+
+    &:hover {
+      border: 1px solid #d5d7de;
+    }
+
+    &:active {
+      border: 1px solid #161616;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid #161616;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    margin-top: 40px;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    background-color: #d12d35;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: #ae1c23;
+    }
+
+    &:active {
+      background-color: #eb343d;
+    }
+  }
+}
