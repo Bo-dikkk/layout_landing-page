@@ -3,6 +3,9 @@
   height: 180px;
   background-size: cover;
   background-position: center;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
 
   @include on-tablet {
     height: 360px;

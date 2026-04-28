@@ -68,7 +68,11 @@
     height: 100%;
     object-fit: cover;
 
-    @include hover(transform, scale(1.1));
+    @include hover(transform, scale(1.05));
+
+    @include on-tablet {
+      @include hover(transform, scale(1.1));
+    }
 
     &--position-right {
       object-position: right;
@@ -94,7 +98,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
-    color: #d12d35;
+    color: $second-color;
   }
 
   &__info {

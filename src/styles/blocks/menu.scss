@@ -1,13 +1,13 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #d12d35;
+  background-color: $second-color;
   font-weight: 700;
   text-transform: uppercase;
   overflow: auto;
 
   &__top {
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1;
     margin-bottom: 16px;
@@ -34,6 +34,8 @@
     line-height: 27px;
     color: $header-text-color;
     text-decoration: none;
+
+    @include hover(color , #D3D3D3);
   }
 
   &__call-to-order {
