@@ -12,6 +12,14 @@
   &__hover-numbers {
     display: grid;
     row-gap: 8px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   &__hover-number {
