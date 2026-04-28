@@ -18,8 +18,6 @@
     margin-top: 48px;
     display: grid;
     row-gap: 48px;
-    column-gap: 24px;
-
     grid-column: span 2;
 
     @include on-tablet {
@@ -27,6 +25,7 @@
     }
 
     @include on-desktop {
+      column-gap: 24px;
       grid-column: 1 / 7;
     }
   }
